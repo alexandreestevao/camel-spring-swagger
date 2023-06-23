@@ -75,38 +75,43 @@
 			<artifactId>camel-swagger-java-starter</artifactId>
 		</dependency>
 
-<!-- https://mvnrepository.com/artifact/org.webjars/swagger-ui -->
-<dependency>
-    <groupId>org.webjars</groupId>
-    <artifactId>swagger-ui</artifactId>
-    <version>3.1.4</version>
-</dependency>
+		<!-- https://mvnrepository.com/artifact/org.webjars/swagger-ui -->
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>swagger-ui</artifactId>
+			<version>3.1.4</version>
+		</dependency>
 
-<!-- https://mvnrepository.com/artifact/org.webjars/webjars-locator -->
-<dependency>
-    <groupId>org.webjars</groupId>
-    <artifactId>webjars-locator</artifactId>
-    <version>0.36</version>
-</dependency>
+		<!-- https://mvnrepository.com/artifact/org.webjars/webjars-locator -->
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>webjars-locator</artifactId>
+			<version>0.36</version>
+		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-devtools -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+		</dependency>
 
-			<!-- OpenShift config -->
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-starter-kubernetes-config</artifactId>
-			</dependency>
+		<!-- OpenShift config -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-kubernetes-config</artifactId>
+		</dependency>
 
-			<!-- testing -->
-			<dependency>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-starter-test</artifactId>
-				<scope>test</scope>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.camel</groupId>
-				<artifactId>camel-test-spring</artifactId>
-				<scope>test</scope>
-			</dependency>
+		<!-- testing -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-test-spring</artifactId>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 
 	<build>

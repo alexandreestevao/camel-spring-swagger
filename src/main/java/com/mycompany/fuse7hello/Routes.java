@@ -37,7 +37,7 @@ public class Routes extends RouteBuilder {
             .log("Hello World!");
 
         rest()
-            .get("hello")
+            .get("/hello")
                 .route()
                 .setBody().body(()->new HelloResponse(greeting+" World!"))
                 .removeHeaders("*")
@@ -55,15 +55,15 @@ public class Routes extends RouteBuilder {
                 .endRest()
 
             //Some additional APIs to test memory heavy or cpu intensive workloads
-            .get("memory/{mb}")
+            .get("/memory/{mb}")
                 .route()
                 .setBody().method(this,"createObject")
                 .endRest()
-            .get("cpu/{iteration}")
+            .get("/cpu/{iteration}")
                 .route()
                 .setBody().method(this,"cpuLoad")
                 .endRest()
-            .get("threads/{threads}/cpu/{iteration}")
+            .get("/threads/{threads}/cpu/{iteration}")
                 .route()
                 .setBody().method(this,"multiThreadCpuLoad")
                 .endRest()
